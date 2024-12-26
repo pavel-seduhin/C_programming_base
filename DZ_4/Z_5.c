@@ -14,9 +14,9 @@ int main() {
             int rem = i, sum = 0, prod = 1;
             while(rem > 0){
                 int dig = rem % 10;
-                sum = sum + dig;
-                prod = prod * dig;
-                rem = rem / 10;      
+                sum += dig;
+                prod *= dig;
+                rem /= 10;      
             }
             if(sum == prod){
                 printf("%d ", i);

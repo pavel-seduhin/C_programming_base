@@ -7,7 +7,7 @@ int main() {
     scanf("%d", &num);
     while(num != 0){
         res = (res * 10) + (num % 10);
-        num = num / 10;
+        num /= 10;
     }
     printf("%d\n", res);
     return 0;
