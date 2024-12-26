@@ -7,12 +7,12 @@ int main() {
     scanf("%d%d", &a, &b);
     if (a < b){
         for(i = a; i <= b; i ++) {
-            sum = i * i + sum;
+            sum += i * i;
         }
     }
     else {
         for(i = b; i <= a; i++) {
-            sum = i * i + sum;
+            sum += i * i;
         }
     }
     printf("%d\n", sum);

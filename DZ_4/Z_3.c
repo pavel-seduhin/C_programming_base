@@ -2,16 +2,18 @@
 
 /* Задача 3. Все цифры четные */
 int main() {
-    int num, even = 0, dig = 0;
+    int num;
     printf("Введите целое положительное число\n");
     scanf("%d", &num);
     while(num != 0){
-        if (num % 2 == 0){
-            even++;
+        if(num % 2 == 0){
+        num /= 10;
         }
-        num = num / 10;
-        dig++;
+        else{
+        printf("NO\n");
+        return 0;
+        }
     }
-    printf("%s\n", dig == even ? "YES" : "NO");
+    printf("YES\n");
     return 0;
 }
